@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, View, FlatList } from "react-native";
+import { StyleSheet, View, FlatList,Button } from "react-native";
 import GoalItem from "./components/GoalItem";
 import GoalInput from "./components/GoalInput";
 
@@ -21,6 +21,7 @@ export default function App() {
 
   return (
     <View style={styles.appcontainer}>
+      <Button title="Add new Goal" color={"#5e0acc"}></Button>
       <GoalInput onAddGoal={addGoalHandler} />
       <View style={styles.goalscontainer}>
         <FlatList
